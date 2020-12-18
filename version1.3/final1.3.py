@@ -47,6 +47,7 @@ def delete_task(taskname):
 
 #to view the task which was added
 def view_tasks():
+	view_task_button.configure(state=DISABLED)
 	gettask="""select * from {}""".format("anandhu")
 	cursor.execute(gettask)
 	list_task=cursor.fetchall()
