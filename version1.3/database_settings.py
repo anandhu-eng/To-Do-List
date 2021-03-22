@@ -1,5 +1,5 @@
 import mysql.connector as scon;
-mycon=scon.connect(host="localhost",user="root",password="root",database="ToDoList")
+mycon=scon.connect(host="enter you hostname",user="username",password="passwrd",database="ToDoList")  #In the corresponding system you have to create specified database
 cursor=mycon.cursor()
 def add(nam):
 	table(nam)
@@ -38,7 +38,7 @@ def search_for_person(person_name):
 
 
 	
-gettask="""select * from {}""".format("anandhu")
+gettask="""select * from {}""".format("")
 cursor.execute(gettask)
 list_task=cursor.fetchall()
 length=len(list_task)
